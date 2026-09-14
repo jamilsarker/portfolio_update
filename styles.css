@@ -379,6 +379,13 @@ a {
     height: 100%;
 }
 
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
 .about-accent-1 {
     position: absolute;
     top: -20px;

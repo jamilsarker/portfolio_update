@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamil Sarker Hamim - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            padding: 40px 20px;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .header .subtitle {
+            font-size: 1.1rem;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+            font-size: 0.95rem;
+        }
+
+        .contact-info span {
+            display: inline-block;
+        }
+
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .summary {
+            text-align: justify;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .education-item, .project-item {
+            margin-bottom: 20px;
+        }
+
+        .education-item h3, .project-item h3 {
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .education-item .details, .project-item .details {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+
+        .education-item p, .project-item p {
+            color: #555;
+            line-height: 1.7;
+            margin-left: 20px;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #ecf0f1;
+            color: #2c3e50;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            border: 1px solid #bdc3c7;
+        }
+
+        .project-links {
+            margin-top: 8px;
+            margin-left: 20px;
+        }
+
+        .project-links a {
+            color: #3498db;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 0.9rem;
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+
+        .languages, .soft-skills {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .print-button:hover {
+            background: #2980b9;
+        }
+
+        @media print {
+            body {
+                padding: 20px;
+            }
+            .print-button {
+                display: none;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
+            .print-button {
+                top: 10px;
+                right: 10px;
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button" onclick="window.print()">📄 Print/Save as PDF</button>
+
+    <div class="header">
+        <h1>Jamil Sarker Hamim</h1>
+        <div class="subtitle">Computer Science & Engineering Student | Front-End Web Developer</div>
+        <div class="contact-info">
+            <span>📞 01978348411</span>
+            <span>|</span>
+            <span>✉️ <a href="mailto:jamilsarkerhamim@gmail.com">jamilsarkerhamim@gmail.com</a></span>
+            <span>|</span>
+            <span>📍 Joydebpur, Gazipur, Bangladesh</span>
+        </div>
+        <div class="contact-info" style="margin-top: 8px;">
+            <span>🔗 <a href="https://github.com/jamilsarker" target="_blank">github.com/jamilsarker</a></span>
+            <span>|</span>
+            <span>🌐 <a href="https://jamilsarker.github.io/portfolio_update/" target="_blank">Portfolio</a></span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="summary">
+            Final-year B.Sc. in CSE student with strong front-end web development skills. Experienced in 
+            HTML, CSS, JavaScript, React, and Tailwind CSS, with hands-on project development. Passionate 
+            about building responsive applications, learning new technologies, and currently conducting 
+            undergraduate research on Heart Disease Prediction using Machine Learning.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        
+        <div class="education-item">
+            <h3>B.Sc. in Computer Science & Engineering</h3>
+            <div class="details">Uttara University | CGPA: 3.33 | Expected Graduation: April 2027</div>
+        </div>
+
+        <div class="education-item">
+            <h3>Higher Secondary Certificate (HSC)</h3>
+            <div class="details">Gazipur Metropolitan College | GPA: 4.11 | 2022</div>
+        </div>
+
+        <div class="education-item">
+            <h3>Secondary School Certificate (SSC)</h3>
+            <div class="details">Gazipur Shaheen Cadet Academy | GPA: 4.21 | 2020</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">VS Code</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-item">
+            <h3>Web-for-Jamil</h3>
+            <div class="details">Technologies: HTML, CSS, JavaScript</div>
+            <p>
+                Designed and developed a responsive personal portfolio website showcasing personal 
+                information, technical skills, and projects.
+            </p>
+            <div class="project-links">
+                <a href="https://github.com/jamilsarker/web-for-jamil" target="_blank">GitHub</a>
+                <a href="https://jamilsarker.github.io/web-for-jamil/" target="_blank">Live Demo</a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h3>Digital Clock</h3>
+            <div class="details">Technologies: HTML, CSS, JavaScript</div>
+            <p>
+                Built a real-time digital clock using JavaScript with dynamic DOM manipulation and live time 
+                updates.
+            </p>
+            <div class="project-links">
+                <a href="https://github.com/jamilsarker/clock" target="_blank">GitHub</a>
+                <a href="https://jamilsarker.github.io/clock/" target="_blank">Live Demo</a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h3>Library Management System</h3>
+            <div class="details">Technologies: HTML, CSS, JavaScript</div>
+            <p>
+                Developed a simple library management system interface for managing books with a clean and 
+                responsive design.
+            </p>
+            <div class="project-links">
+                <a href="https://github.com/jamilsarker/Library_management_system" target="_blank">GitHub</a>
+                <a href="https://jamilsarker.github.io/Library_management_system/" target="_blank">Live Demo</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Research</h2>
+        <div class="project-item">
+            <h3>Undergraduate Thesis (Ongoing)</h3>
+            <div class="details">Heart Disease Prediction Using Machine Learning</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Languages</h2>
+        <p class="languages">Bangla (Native), English (Professional), Hindi (Conversational)</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Soft Skills</h2>
+        <p class="soft-skills">Communication • Teamwork • Time Management</p>
+    </div>
+
+    <div class="section">
+        <div class="details" style="text-align: center; margin-top: 30px; color: #7f8c8d;">
+            LinkedIn: <a href="https://linkedin.com/in/jamilsarkerhamim" target="_blank">Jamil Sarker Hamim</a>
+        </div>
+    </div>
+</body>
+</html>

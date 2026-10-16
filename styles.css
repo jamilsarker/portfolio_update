@@ -1054,6 +1054,132 @@ a {
     margin-bottom: 2rem;
 }
 
+/* ===== ACHIEVEMENTS SECTION ===== */
+.achievements {
+    padding: 8rem 2rem;
+    background: var(--color-dark);
+}
+
+.achievements-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.achievements-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.achievements-header .section-title {
+    color: var(--color-light);
+}
+
+.achievements-header .section-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.achievements-grid {
+    display: grid;
+    gap: 3rem;
+}
+
+.achievement-card {
+    background: rgba(245, 241, 232, 0.05);
+    border-radius: 12px;
+    padding: 3rem;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    transition: var(--transition);
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-gold);
+    box-shadow: 0 20px 60px rgba(212, 175, 55, 0.2);
+}
+
+.achievement-badge {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(212, 175, 55, 0.1);
+    border-radius: 50%;
+    border: 2px solid rgba(212, 175, 55, 0.3);
+}
+
+.achievement-content {
+    flex: 1;
+}
+
+.achievement-date {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-gold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+}
+
+.achievement-title {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-light);
+    margin-bottom: 0.5rem;
+}
+
+.achievement-company {
+    font-size: 1.1rem;
+    color: var(--color-gold);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.achievement-description {
+    color: var(--color-gray-light);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.achievement-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.achievement-detail-item {
+    background: rgba(212, 175, 55, 0.15);
+    color: var(--color-light);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+@media (max-width: 768px) {
+    .achievement-card {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+    
+    .achievement-badge {
+        width: 64px;
+        height: 64px;
+    }
+    
+    .achievement-title {
+        font-size: 1.5rem;
+    }
+}
+
 /* ===== RESUME SECTION ===== */
 .resume-section {
     padding: 6rem 2rem;
